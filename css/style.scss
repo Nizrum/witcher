@@ -166,3 +166,65 @@ body {
         margin-right: -8px;
     }
 }
+
+.episodes {
+    margin-top: 85px;
+}
+
+.swiper-container {
+    width: 420px;
+    height: 115px;
+    margin: 0;
+}
+
+.swiper-wrapper {
+    position: relative;
+}
+
+.button-next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.episode {
+    width: 164px;
+    height: 115px;
+    background-size: cover;
+    border-radius: 8px;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+
+    &__counter {
+        font-size: 10px;
+        line-height: 12px;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 0;
+        margin-top: 2px;
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
+
+.episode--1 {
+    background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url('../img/episode-1.jpg');
+}
+
+.episode--2 {
+    background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url('../img/episode-2.jpg');
+}

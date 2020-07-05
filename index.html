@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Ведьмак - Страница о фильме</title>
@@ -66,7 +67,33 @@
                 </button>
             </div>
         </main>
+        <section class="episodes">
+            <div class="swiper-container">
+                
+                <div class="swiper-wrapper">
+                    <a href="#" class="swiper-slide">
+                        <div class="episodes__episode episode episode--1">
+                            <div class="episode__counter">Серия #1</div>
+                            <h3 class="episode__title">Начало конца</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <div class="episodes__episode episode episode--2">
+                            <div class="episode__counter">Серия #2</div>
+                            <h3 class="episode__title">Четыре знака</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <button class="button-next">
+                    <img src="img/arrow.svg" alt="arw">
+                </button>
+
+            </div>
+        </section>
     </div>
     <div class="background"></div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
