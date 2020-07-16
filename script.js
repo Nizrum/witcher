@@ -1,3 +1,12 @@
+const menuBtn = document.querySelector('.menu-button');
+const mMenu = document.querySelector('.m-menu');
+
+menuBtn.addEventListener('click', function () {
+    mMenu.classList.toggle('active');
+    menuBtn.classList.toggle('active');
+});
+
+
 let mySwiper = new Swiper('.swiper-container', {
   
     loop: true,
@@ -12,4 +21,4 @@ let mySwiper = new Swiper('.swiper-container', {
             slidesPerView: 2,
         }
     }
-})
+});
